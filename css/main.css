@@ -84,10 +84,10 @@ em{color:var(--gold);font-style:italic}
   background:#FFFFF7;
   border-bottom:1px solid var(--border);
   transition:box-shadow .3s;
-  overflow: hidden;
+  
 }
 .hdr.scrolled{box-shadow:var(--sh)}
-.hdr__inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.hdr__inner{display:flex;align-items:center;justify-content:space-between;height:68px;overflow: hidden;}
 
 .logo{display:flex;align-items:center;gap:10px}
 .logo__hex{font-size:1.7rem;color:var(--md);line-height:1}
