@@ -583,6 +583,8 @@ em{color:var(--gold);font-style:italic}
   .atime::before{left:66px}
   .atime-yr{width:56px;font-size:.97rem}
   .atime-item::before{left:65px}
+  .pcount{margin-left:auto;font-size:.6rem;color:var(--lt)}
+  .fbtn{padding:3px 8px;border-radius:100px;font-size:.5rem;font-weight:500;color:var(--lt);background:var(--cream);border:1.5px solid transparent;transition:border-color .2s,color .2s, background .2s}
 }
 
 @media(max-width:480px){
