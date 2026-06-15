@@ -566,6 +566,7 @@ em{color:var(--gold);font-style:italic}
   .nav__a{display:block;padding:10px 12px}
   .hamburger{display:flex}
   .sec{padding:60px 0}
+  .hero{ height: 80vh;}
   .hero{max-height:none}
   .hero__h1{font-size:clamp(2rem,8vw,3.2rem)}
   .process{flex-direction:column;gap:14px}
