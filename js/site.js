@@ -56,8 +56,13 @@
     if(!src)return;
     var img=sl.querySelector('.hero__img');
     if(!img)return;
+    var bg=sl.querySelector('.hero__bg');
     var t=new Image();
-    t.onload=function(){img.src=src;loaded[i]=true;};
+    t.onload=function(){
+      img.src=src;
+      if(bg)bg.style.backgroundImage="url('"+src+"')";
+      loaded[i]=true;
+    };
     t.src=src;
   }
 
