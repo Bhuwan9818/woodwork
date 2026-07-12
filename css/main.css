@@ -117,9 +117,16 @@ em{color:var(--gold);font-style:italic}
 /* ── HERO CAROUSEL ───────────────────────────────── */
 .hero{
   position:relative;
-  height:100vh;min-height:560px;max-height:900px;
+  background:var(--dk);
+}
+
+/* Viewport sizes itself to the banner's own proportions — height follows
+   width automatically, so there is never empty space above/below the image */
+.hero__viewport{
+  position:relative;
+  width:100%;
+  aspect-ratio:2048/768;
   overflow:hidden;
-  /* margin-top:68px; push below fixed header */
 }
 
 /* Slides container */
@@ -132,11 +139,12 @@ em{color:var(--gold);font-style:italic}
   opacity:0;
   transition:opacity .7s ease;
   pointer-events:none;
+  overflow:hidden;
 }
 .hero__slide--active{opacity:1;z-index:2;pointer-events:auto}
-.hero__slide{overflow:hidden}
 
-/* Blurred backdrop fills the slide edge-to-edge (no dead bars) */
+/* Blurred backdrop — safety net in case an image's aspect ratio ever
+   differs slightly from the viewport; invisible when they match exactly */
 .hero__bg{
   position:absolute;inset:0;z-index:0;
   background-size:cover;
@@ -192,7 +200,6 @@ em{color:var(--gold);font-style:italic}
   color:var(--white);font-size:1.5rem;
   display:flex;align-items:center;justify-content:center;
   transition:background .2s,transform .2s;
-  margin-top:-40px; /* above stats bar */
 }
 .hero__arrow:hover{background:var(--gold);transform:translateY(-50%) scale(1.08)}
 .hero__arrow--prev{left:24px}
@@ -200,7 +207,7 @@ em{color:var(--gold);font-style:italic}
 
 /* Dots */
 .hero__dots{
-  position:absolute;bottom:72px;left:50%;z-index:10;
+  position:absolute;bottom:16px;left:50%;z-index:10;
   transform:translateX(-50%);
   display:flex;gap:8px;
 }
@@ -212,9 +219,9 @@ em{color:var(--gold);font-style:italic}
 }
 .hero__dot--active{width:28px;background:var(--gold)}
 
-/* Stats bar — solid dark, NO backdrop-filter */
+/* Stats bar — normal flow, sits below the image (no longer overlapping it) */
 .hero__stats{
-  position:absolute;bottom:0;left:0;right:0;z-index:10;
+  position:relative;z-index:10;
   background:rgba(12,6,2,.88);
   border-top:1px solid rgba(200,146,42,.2);
 }
@@ -578,8 +585,6 @@ em{color:var(--gold);font-style:italic}
   .nav__a{display:block;padding:10px 12px}
   .hamburger{display:flex}
   .sec{padding:60px 0}
-  .hero{ height: 80vh;}
-  .hero{max-height:none}
   .hero__h1{font-size:clamp(2rem,8vw,3.2rem)}
   .process{flex-direction:column;gap:14px}
   .proc{margin:0;max-width:100%}
