@@ -305,7 +305,7 @@ function buildCard(p){
     '<p itemprop="description">'+p.shortDesc+'</p>'+
     '<div class="pcard__chips">'+chips+'</div>'+
     '<div class="pcard__acts">'+
-    '<a href="product-'+p.id+'.html" class="btn btn--outline">View Details</a>'+
+    '<a href="'+p.slug+'.html" class="btn btn--outline">View Details</a>'+
     '<a href="contact.html?product='+encodeURIComponent(p.name)+'" class="btn btn--dark">Enquire</a>'+
     '</div></div></article>';
 }

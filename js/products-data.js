@@ -315,35 +315,33 @@ const PRODUCTS = [
     ]
   },
 
-  // ── OTHER PACKAGING PRODUCTS ─────────────────────────────
-
-  // {
-  //   id: 12,
-  //   slug: "shrink-wrap",
-  //   name: "Shrink Wrap",
-  //   category: "packaging",
-  //   tags: ["packaging"],
-  //   image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=72&fm=webp&fit=crop",
-  //   imageAlt: "Shrink wrap film for pallet packaging",
-  //   shortDesc: "Industrial-grade stretch and shrink wrap film for pallet unitisation and load stabilisation. Available in multiple widths and gauges.",
-  //   description: "Our Shrink Wrap (Stretch Film) is an industrial-grade LLDPE stretch film used for unitising pallet loads, protecting goods from dust, moisture, and tampering during storage and transit. Available in hand roll and machine roll formats across multiple widths (500mm, 750mm) and gauges (17–25 micron). Pre-stretched film options reduce material usage by up to 50%. An essential packaging consumable supplied alongside our pallets for complete packaging solutions.",
-  //   specs: {
-  //     "Material": "LLDPE (Linear Low-Density Polyethylene)",
-  //     "Width": "500mm / 750mm",
-  //     "Gauge": "17–25 micron",
-  //     "Format": "Hand roll / Machine roll",
-  //     "Core Diameter": "50mm / 76mm",
-  //     "Colour": "Clear / Black / Coloured"
-  //   },
-  //   features: [
-  //     "High cling strength for secure pallet loads",
-  //     "Pre-stretched film reduces material consumption",
-  //     "UV-stabilised option for outdoor storage",
-  //     "Machine roll for high-volume pallet wrapping",
-  //     "Tamper-evident packaging for high-value goods",
-  //     "Available in black for opaque/confidential loads"
-  //   ]
-  // },
+  {
+    id: 12,
+    slug: "Nut-Bolt-Boxes",
+    name: "Nut Bolt Boxes",
+    category: "box",
+    tags: ["box","crate","export"],
+    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=72&fm=webp&fit=crop",
+    imageAlt: "nut bolt boxes for industrial fasteners and hardware",
+    shortDesc: "nut bolt boxes for industrial fasteners and hardware. Heavy-duty, reinforced wooden boxes for safe storage and transport of nuts, bolts, and small components.",
+    description: "Our Nut Bolt Boxes are designed for the safe storage and transport of nuts, bolts, and small components. Constructed from durable wood, these boxes provide reliable protection during handling and transit.",
+    specs: {
+      "Material": "Wood (Pine / Hardwood)",
+      "Width": "500mm / 750mm",
+      "Gauge": "17–25 micron",
+      "Format": "Hand roll / Machine roll",
+      "Core Diameter": "50mm / 76mm",
+      "Colour": "Clear / Black / Coloured"
+    },
+    features: [
+      "High cling strength for secure pallet loads",
+      "Pre-stretched film reduces material consumption",
+      "UV-stabilised option for outdoor storage",
+      "Machine roll for high-volume pallet wrapping",
+      "Tamper-evident packaging for high-value goods",
+      "Available in black for opaque/confidential loads"
+    ]
+  },
 
   // {
   //   id: 13,
