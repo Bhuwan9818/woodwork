@@ -321,7 +321,7 @@ const PRODUCTS = [
     name: "Nut Bolt Boxes",
     category: "box",
     tags: ["box","crate","export"],
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=72&fm=webp&fit=crop",
+    image: "images/nutbolt.jpg",
     imageAlt: "nut bolt boxes for industrial fasteners and hardware",
     shortDesc: "nut bolt boxes for industrial fasteners and hardware. Heavy-duty, reinforced wooden boxes for safe storage and transport of nuts, bolts, and small components.",
     description: "Our Nut Bolt Boxes are designed for the safe storage and transport of nuts, bolts, and small components. Constructed from durable wood, these boxes provide reliable protection during handling and transit.",
